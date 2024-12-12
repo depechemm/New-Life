@@ -1,0 +1,98 @@
+#container-none-width {
+    max-width: none;
+}
+
+.pet-container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    align-items: center;
+    border-radius: 2em;
+    background-color: rgba(255, 245, 218, 1);
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.pet-main-info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.pet-card-block {
+    display: flex;
+    align-items: center;
+}
+
+.pet-photos-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pet-photos-block>img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+.pet-info-block, .pet-info-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    border-radius: 2em;
+    width: 65%;
+}
+
+.pet-info-add {
+    margin-top: 10px;
+    width: 95%;
+}
+
+.pet-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pet-info>img {
+    width: 25px;
+    max-height: 25px;
+}
+
+.pet-info>p {
+    font-size: 14px;
+}
+
+#slider-circles-photo {
+    padding-top: 5px;
+    margin: 0;
+}
+
+@media (max-width: 720px) {
+    .pet-container {
+        width: 500px;
+    }
+}
+
+@media (max-width: 540px) {
+    .pet-container {
+        width: 280px;
+    }
+    .pet-main-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pet-info-block, .pet-info-add {
+        width: 85%;
+    }
+    .pet-info-add {
+        margin-top: 0;
+    }
+}

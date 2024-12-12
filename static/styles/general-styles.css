@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Martel Sans", sans-serif;
+    color: rgba(47, 31, 12, 1);
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+/* Шапка сайта */
+.head-panel {
+    display: flex;
+    height: 63px;
+    justify-content: center;
+    gap: 3em;
+    align-items: center;
+    background-color: rgba(149, 218, 224, 1);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.search-block {
+    display: flex;
+    height: 70%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 2em;
+}
+
+.search-block input {
+    height: 100%;
+    width: 98%;
+    padding: 10px;
+    caret-color: rgba(47, 31, 12, 1);
+    border: none;
+    border-radius: 2em;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-block>input:focus {
+    outline: none;
+}
+
+.search-block>input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.search-block>input::placeholder {
+    color: #aaaaaa;
+}
+
+.search-block>button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.search-block>button>img {
+    padding-top: 6px;
+    width: 30px;
+    height: 30px;
+}
+
+.search-block>img {
+    height: 70%;
+    padding-right: 2%;
+}
+
+input[type="search"]:valid:not(:placeholder-shown) {
+    border-style: none;
+}
+
+input[type="search"]:invalid:not(:placeholder-shown) {
+    border-style: none;
+}
+
+.panel-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+
+}
+
+.panel-icons>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 3em;
+    width: auto;
+}
+
+.icon:hover {
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
+.burger-button {
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+}
+
+.panel-logo {
+    display: flex;
+    align-items: center;
+    height: 70%;
+}
+
+.burger-panel-icons {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(34, 95, 97, 1);
+    border-radius: 2em;
+    padding: 10px;
+}
+
+.burger-panel-icons>a {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.burger-panel-icons>a:hover {
+    color: rgba(149, 218, 224, 1);
+    transition: transform 0.8s;
+}
+
+/* Теги для адаптивности шапки*/
+@media (max-width: 1000px) {
+    .burger-button {
+        display: block;
+    }
+    .panel-icons {
+        display: none;
+    }
+    .head-panel {
+        flex-direction: row-reverse;
+        gap: 1em;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .burger-menu:hover .burger-panel-icons {
+        position: absolute;
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .panel-logo {
+        display: none;
+    }
+
+    .search-block {
+        height: 70%;
+        width: 80%;
+    }
+}
+
+/* Подвал сайта */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(149, 218, 224, 1);
+}
+
+.footer-items {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-items>img {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 200px;
+}
+
+.footer-items-link {
+    display: flex;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid rgba(34, 95, 97, 1);
+}
+
+.footer-item>p {
+    color: rgba(34, 95, 97, 1);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-link, .footer-item-block>p {
+    color: rgba(34, 95, 97, 1);
+}
+
+.footer-item-block {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.footer-item-block>img {
+    height: 15px;
+}
+
+.no-border {
+    border: none;
+}
+
+.copy {
+    background-color: white;
+    color: rgba(34, 95, 97, 1);
+    text-align: center;
+}
+
+
+/* Тег для адаптивности подвала */
+@media (max-width: 600px) {
+    .footer-items {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Golos+Text:wght@400..900&family=Martel+Sans:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static/styles/general-styles.css">
+    <link rel="stylesheet" href="static/styles/main-page-styles.css">
+    <link rel="stylesheet" href="static/styles/profile-styles.css">
+    <title>Личный кабинет</title>
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <nav class="head-panel">
+        <a href="index.html">
+            <div class="panel-logo"><img src="static/img/simple-logo.svg" alt=""></div>
+        </a>
+        <form class="search-block">
+            <input name="s" placeholder="Найти питомца..." type="search">
+            <button type="submit"><img src="static/img/search.svg" alt=""></button>
+        </form>
+        <div class="panel-icons">
+            <a href="index.html#reviews"><img class="icon" src="static/img/feedback.svg" alt=""></a>
+            <a href="add.html"><img class="icon" src="static/img/add-plus-square.svg" alt=""></a>
+            <a href="login.html"><img class="icon" src="static/img/account-avatar-person.svg" alt=""></a>
+        </div>
+        <div class="burger-menu">
+            <button class="burger-button">
+                <img style="height: 50%;" src="static/img/burger-menu.png" alt="">
+            </button>
+            <div class="burger-panel-icons">
+                <a href="index.html">Главная</a>
+                <a href="login.html">Личный кабинет</a>
+                <a href="add.html">Добавить объявление</a>
+                <a href="index.html#reviews">Отзывы</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 20px;">
+        <p class="bold-text">ЛИЧНЫЙ КАБИНЕТ</p>
+        <div class="profile-block">
+            <div class="profile-img">
+                <img src="static/img/user-photo.svg" alt="">
+            </div>
+            <div class="profile-info">
+                <p>ФИО ПОЛЬЗОВАТЕЛЯ</p>
+                <div class="info-edit">
+                    <p>8 (999) 999-99-99</p>
+                    <img src="static/img/edit-icon.svg" alt="">
+                </div>
+                <div class="info-edit">
+                    <p>mail@newlife.ru</p>
+                    <img src="static/img/edit-icon.svg" alt="">
+                </div>
+                <div class="info-no-edit">
+                    <p>Количество объявлений: <span>10</span></p>
+                    <p>Количество найденных животных: <span>10</span></p>
+                    <p>Дата регистрации: <span>дд.мм.гг</span></p>
+                    <p>Дни на сайте: <span>100</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-bottom: 30px;">
+        <p class="bold-text">АКТИВНО</p>
+        <div class="ads-block">
+            <div class="ad-item">
+                <div class="ad-info">
+                    <img src="static/img/pet-photo.svg" alt="">
+                    <div class="card-info-block">
+                        <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/date.svg" alt="">
+                            <p>дд.мм.гггг</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/user.svg" alt="">
+                            <p>Пользователь</p>
+                        </div>
+                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
+                    </div>
+                </div>
+                <div class="ad-button">
+                    <button class="button-input" id="edit-button">РЕДАКТИРОВАТЬ</button>
+                    <button class="button-input" id="delete-button">УДАЛИТЬ</button>
+                </div>
+            </div>
+            <div class="ad-item">
+                <div class="ad-info">
+                    <img src="static/img/pet-photo.svg" alt="">
+                    <div class="card-info-block">
+                        <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/date.svg" alt="">
+                            <p>дд.мм.гггг</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/user.svg" alt="">
+                            <p>Пользователь</p>
+                        </div>
+                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
+                    </div>
+                </div>
+                <div class="ad-button">
+                    <button class="button-input" id="edit-button">РЕДАКТИРОВАТЬ</button>
+                    <button class="button-input" id="delete-button">УДАЛИТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-bottom: 30px;">
+        <p class="bold-text">НА МОДЕРАЦИИ</p>
+        <div class="ads-block">
+            <div class="ad-item" id="moderate-ad">
+                <div class="ad-info">
+                    <img src="static/img/pet-photo.svg" alt="">
+                    <div class="card-info-block">
+                        <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/date.svg" alt="">
+                            <p>дд.мм.гггг</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/user.svg" alt="">
+                            <p>Пользователь</p>
+                        </div>
+                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
+                    </div>
+                </div>
+                <div class="ad-button">
+                    <button class="button-input" id="edit-button">РЕДАКТИРОВАТЬ</button>
+                    <button class="button-input" id="delete-button">УДАЛИТЬ</button>
+                </div>
+            </div>
+            <div class="ad-item" id="moderate-ad">
+                <div class="ad-info">
+                    <img src="static/img/pet-photo.svg" alt="">
+                    <div class="card-info-block">
+                        <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/date.svg" alt="">
+                            <p>дд.мм.гггг</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/user.svg" alt="">
+                            <p>Пользователь</p>
+                        </div>
+                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
+                    </div>
+                </div>
+                <div class="ad-button">
+                    <button class="button-input" id="edit-button">РЕДАКТИРОВАТЬ</button>
+                    <button class="button-input" id="delete-button">УДАЛИТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-bottom: 30px;">
+        <p class="bold-text">НАЙДЕНО</p>
+        <div class="ads-block">
+            <div class="ad-item" id="find-ad">
+                <div class="ad-info">
+                    <img src="static/img/pet-photo.svg" alt="">
+                    <div class="card-info-block">
+                        <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/date.svg" alt="">
+                            <p>дд.мм.гггг</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/user.svg" alt="">
+                            <p>Пользователь</p>
+                        </div>
+                        <p>Дополнительная информация по объявлению</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ad-item" id="find-ad">
+                <div class="ad-info">
+                    <img src="static/img/pet-photo.svg" alt="">
+                    <div class="card-info-block">
+                        <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/date.svg" alt="">
+                            <p>дд.мм.гггг</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/user.svg" alt="">
+                            <p>Пользователь</p>
+                        </div>
+                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="button-load">ЗАГРУЗИТЬ ЕЩЕ</button>
+    </div>
+
+    <div class="container">
+        <p class="bold-text">В АРХИВЕ</p>
+        <div class="ads-block">
+            <div class="ad-item" id="archive-ad">
+                <div class="ad-info">
+                    <img src="static/img/pet-photo.svg" alt="">
+                    <div class="card-info-block">
+                        <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/date.svg" alt="">
+                            <p>дд.мм.гггг</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/user.svg" alt="">
+                            <p>Пользователь</p>
+                        </div>
+                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ad-item" id="archive-ad">
+                <div class="ad-info">
+                    <img src="static/img/pet-photo.svg" alt="">
+                    <div class="card-info-block">
+                        <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/date.svg" alt="">
+                            <p>дд.мм.гггг</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/user.svg" alt="">
+                            <p>Пользователь</p>
+                        </div>
+                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="button-load">ЗАГРУЗИТЬ ЕЩЕ</button>
+    </div>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="footer-items">
+            <img src="static/img/logo.png" alt="">
+            <div class="footer-items-link">
+                <div class="footer-item">
+                    <p>МЕНЮ</p>
+                    <a class="footer-link" href="index.html">Главная</a>
+                    <a class="footer-link" href="register.html">Регистрация</a>
+                    <a class="footer-link" href="login.html">Авторизация</a>
+                    <a class="footer-link" href="profile.html">Личный кабинет</a>
+                    <a class="footer-link" href="pet.html">Найденное животное</a>
+                    <a class="footer-link" href="search.html">Поиск</a>
+                </div>
+                <div class="footer-item no-border">
+                    <p>СВЯЗЬ С НАМИ</p>
+                    <div class="footer-item-block">
+                        <img src="static/img/footer-email.svg" alt="">
+                        <p>mail@newlife.ru</p>
+                    </div>
+                    <div class="footer-item-block">
+                        <img src="static/img/footer-phone.svg" alt="">
+                        <p>8 (800)123-45-67</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <p class="copy">&copy 2024 "Новая жизнь"</p>
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+.profile-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 245, 218, 1);
+    border-radius: 2em;
+    padding: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+.profile-img {
+    height: 300px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-info>p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info-edit {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2em;
+}
+
+.info-edit>p {
+    color: #aaaaaa;
+}
+
+.info-edit>img {
+    height: 25px;
+    cursor: pointer;
+}
+
+.info-edit>img:hover {
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
+.info-no-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 2em;
+}
+
+p>span {
+    font-weight: bold;
+}
+
+@media (max-width: 1080px) {
+    .profile-img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 770px) {
+    .info-edit, .info-no-edit {
+        width: 250px;
+    }
+    .info-no-edit {
+        padding: 10px;
+    }
+    .profile-block {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-block {
+        flex-direction: column;
+    }
+    .info-edit, .info-no-edit {
+        width: 350px;
+    }
+    .profile-info {
+        align-items: center;
+    }
+    .profile-info>p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 405px) {
+    .info-edit, .info-no-edit {
+        width: 260px;
+    }
+}
+
+
+
+.ads-block {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.ad-item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 245, 218, 1);
+    border-radius: 2em;
+    padding: 5px;
+    padding-bottom: 10px;
+    gap: 5px;
+}
+
+.ad-info {
+    display: flex;
+}
+
+.ad-info>img {
+    height: 200px;
+    border-radius: 2em;
+}
+
+.card-info-block {
+    padding: 10px;
+    padding-right: 0;
+    padding-bottom: 0;
+    width: auto;
+}
+
+.ad-button {
+    display: flex;
+    gap: 5px;
+}
+
+.button-input {
+    margin: 0;
+    font-size: 16px;
+    width: 50%;
+}
+
+.button-load {
+    display: flex;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2em;
+    background-color: rgba(47, 31, 12, 1);
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#delete-button {
+    background-color: rgba(203, 67, 67, 1);
+}
+
+#edit-button {
+    background-color: rgb(118, 115, 107);
+}
+
+#moderate-ad {
+    background-color: rgba(241, 233, 172, 1);
+}
+
+#find-ad {
+    background-color: rgba(213, 250, 197, 1);
+}
+
+#archive-ad {
+    background-color: rgba(226, 226, 226, 1);
+}
+
+@media (max-width: 1080px) {
+    .ad-info {
+        flex-direction: column;
+    }
+    .ad-info>img {
+        height: 300px;
+        width: auto;
+    }
+    .ad-button {
+        flex-direction: column;
+    }
+    .button-input {
+        width: 100%;
+    }
+    .ad-item {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 770px) {
+    .ad-item {
+        max-width: 100%;
+    }
+    .ad-info>img {
+        height: 200px;
+    }
+    .card-info-block>p {
+        font-size: 12px;
+    }
+    .ad-info {
+        flex-direction: row;
+        min-width: 400px;
+    }
+    .ad-button {
+        flex-direction: row;
+    }
+    .ads-block {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+    .button-input {
+        width: 50%;
+    }
+    .card-info-block {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 440px) { 
+    .ad-info {
+        flex-direction: column;
+        min-width: 250px;
+    }
+    .ad-info>img {
+        height: 250px;
+        width: 250px;
+    }
+    .ad-button {
+        flex-direction: column;
+    }
+    .ad-item {
+        max-width: 250px;
+    }
+    .button-input {
+        width: 100%;
+    }
+    .card-info-block {
+        max-width: 250px;
+    }
+}

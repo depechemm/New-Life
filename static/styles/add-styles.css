@@ -1,0 +1,162 @@
+.container {
+    height: auto;
+}
+
+.add-photo-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.additional-photos-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.main-photo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.additional-photo {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.main-photo {
+    max-width: 200px;
+}
+
+.additional-photo {
+    max-width: 150px;
+}
+
+.main-photo>p {
+    height: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-photo>img {
+    height: 200px;
+    border-radius: 2em;
+}
+
+.additional-photo>p {
+    height: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.additional-photo>img {
+    height: 150px;
+    border-radius: 2em;
+}
+
+#file-load-label {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    width: 50%;
+    min-width: 150px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(47, 31, 12, 1);
+    border-radius: 2em;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.file-load:valid:not(:placeholder-shown) {
+    border-style: none;
+}
+
+.file-load:invalid:not(:placeholder-shown) {
+    display: none;
+}
+
+.file-load:invalid:not(:placeholder-shown) {
+    border-style: none;
+}
+
+
+.registration-container {
+    margin-top: 15px;
+}
+
+.checkbox-auto-reg {
+    accent-color: rgba(47, 31, 12, 1);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.label-auto-reg {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button-reg {
+    display: flex;
+    width: 50%;
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2em;
+    background-color: rgba(47, 31, 12, 1);
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+#form-container-hide {
+    display: none;
+    background-color: rgba(224, 207, 159, 1);
+    padding: 10px;
+}
+
+input[id="registerCheckbox"]:checked~#form-container-hide {
+    display: flex;
+}
+
+@media (max-width: 580px) {
+    .add-photo-block {
+        flex-direction: column;
+    }
+    .label-auto-reg {
+        font-size: 16px;
+    }
+
+    .main-photo>p {
+        height: 14px;
+    }
+
+    .main-photo>img {
+        height: 180px;
+    }
+
+    .additional-photo>p {
+        height: 12px;
+    }
+    .additional-photo {
+        max-width: 140px;
+    }
+    .additional-photo>img {
+        height: 140px;
+    }
+}
+
+@media (max-width: 580px) {
+    .label-auto-reg {
+        font-size: 14px;
+    }
+}
