@@ -509,6 +509,7 @@ select {
     border-style: none;
     border-radius: 2em;
     font-size: 14px;
+    padding: 5px;
 }
 
 input:valid:not(:placeholder-shown), textarea:valid:not(:placeholder-shown){

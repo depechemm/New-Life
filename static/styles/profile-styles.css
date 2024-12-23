@@ -171,6 +171,20 @@ p>span {
     margin-right: auto;
 }
 
+.select-sorted {
+    background-color: rgba(255, 245, 218, 1);
+    width: 200px;
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+@media (max-width: 580px) {
+    .select-sorted {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 #delete-button {
     background-color: rgba(203, 67, 67, 1);

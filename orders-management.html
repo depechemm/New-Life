@@ -13,11 +13,10 @@
     <link rel="stylesheet" href="static/styles/general-styles.css">
     <link rel="stylesheet" href="static/styles/main-page-styles.css">
     <link rel="stylesheet" href="static/styles/profile-styles.css">
-    <title>Личный кабинет</title>
+    <title>Личный кабинет модератора</title>
 </head>
 
 <body>
-
     <!-- Шапка сайта -->
     <nav class="head-panel">
         <a href="index.html">
@@ -46,260 +45,182 @@
     </nav>
 
     <div class="container" style="padding-top: 20px;">
-        <p class="bold-text">ЛИЧНЫЙ КАБИНЕТ</p>
-        <div class="profile-block">
-            <div class="profile-img">
-                <img src="static/img/user-photo.svg" alt="">
-            </div>
-            <div class="profile-info">
-                <p>ФИО ПОЛЬЗОВАТЕЛЯ</p>
-                <div class="info-edit">
-                    <p>8 (999) 999-99-99</p>
-                    <img src="static/img/edit-icon.svg" alt="">
-                </div>
-                <div class="info-edit">
-                    <p>mail@newlife.ru</p>
-                    <img src="static/img/edit-icon.svg" alt="">
-                </div>
-                <div class="info-no-edit">
-                    <p>Количество объявлений: <span>10</span></p>
-                    <p>Количество найденных животных: <span>10</span></p>
-                    <p>Дата регистрации: <span>дд.мм.гггг</span></p>
-                    <p>Дни на сайте: <span>100</span></p>
-                </div>
-            </div>
+        <div style="display: flex; flex-direction: column;">
+            <p class="bold-text">ЛИЧНЫЙ КАБИНЕТ МОДЕРАТОРА</p>
+            <select class="select-sorted">
+                <option disabled selected>Сортировка</option>
+                <option>По дате</option>
+                <option>По статусу</option>
+            </select>
         </div>
-    </div>
-
-    <div class="container" style="padding-bottom: 30px;">
-        <p class="bold-text">АКТИВНО</p>
         <div class="ads-block">
             <div class="ad-item">
                 <div class="ad-info">
                     <img src="static/img/pet-photo.svg" alt="">
                     <div class="card-info-block">
                         <div class="card-info">
-                            <img src="static/img/locate.svg" alt="">
-                            <p>Район</p>
+                            <img src="static/img/animal-type.svg" alt="">
+                            <p>Вид животного</p>
                         </div>
                         <div class="card-info">
-                            <img src="static/img/phone.svg" alt="">
-                            <p>8 (999) 999-99-99</p>
+                            <img src="static/img/label.svg" alt="">
+                            <p>Клеймо</p>
                         </div>
                         <div class="card-info">
                             <img src="static/img/date.svg" alt="">
                             <p>дд.мм.гггг</p>
                         </div>
                         <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
                             <img src="static/img/user.svg" alt="">
                             <p>Пользователь</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>8 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/email-icon.svg" alt="">
+                            <p>Электронная почта</p>
                         </div>
                         <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
                     </div>
                 </div>
-                <div class="ad-button">
-                    <button class="button-input" id="edit-button">РЕДАКТИРОВАТЬ</button>
-                    <button class="button-input" id="delete-button">УДАЛИТЬ</button>
-                </div>
+                <select style="margin: 10px; padding: 5px;">
+                    <option>На модерации</option>
+                    <option>Активно</option>
+                    <option>Найдено</option>
+                    <option>В архиве</option>
+                </select>
             </div>
             <div class="ad-item">
                 <div class="ad-info">
                     <img src="static/img/pet-photo.svg" alt="">
                     <div class="card-info-block">
                         <div class="card-info">
-                            <img src="static/img/locate.svg" alt="">
-                            <p>Район</p>
+                            <img src="static/img/animal-type.svg" alt="">
+                            <p>Вид животного</p>
                         </div>
                         <div class="card-info">
-                            <img src="static/img/phone.svg" alt="">
-                            <p>8 (999) 999-99-99</p>
+                            <img src="static/img/label.svg" alt="">
+                            <p>Клеймо</p>
                         </div>
                         <div class="card-info">
                             <img src="static/img/date.svg" alt="">
                             <p>дд.мм.гггг</p>
                         </div>
                         <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
                             <img src="static/img/user.svg" alt="">
                             <p>Пользователь</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>8 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/email-icon.svg" alt="">
+                            <p>Электронная почта</p>
                         </div>
                         <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
                     </div>
                 </div>
-                <div class="ad-button">
-                    <button class="button-input" id="edit-button">РЕДАКТИРОВАТЬ</button>
-                    <button class="button-input" id="delete-button">УДАЛИТЬ</button>
-                </div>
+                <select style="margin: 10px; padding: 5px;">
+                    <option>На модерации</option>
+                    <option>Активно</option>
+                    <option>Найдено</option>
+                    <option>В архиве</option>
+                </select>
             </div>
-        </div>
-    </div>
-
-    <div class="container" style="padding-bottom: 30px;">
-        <p class="bold-text">НА МОДЕРАЦИИ</p>
-        <div class="ads-block">
-            <div class="ad-item" id="moderate-ad">
+            <div class="ad-item">
                 <div class="ad-info">
                     <img src="static/img/pet-photo.svg" alt="">
                     <div class="card-info-block">
                         <div class="card-info">
-                            <img src="static/img/locate.svg" alt="">
-                            <p>Район</p>
+                            <img src="static/img/animal-type.svg" alt="">
+                            <p>Вид животного</p>
                         </div>
                         <div class="card-info">
-                            <img src="static/img/phone.svg" alt="">
-                            <p>8 (999) 999-99-99</p>
+                            <img src="static/img/label.svg" alt="">
+                            <p>Клеймо</p>
                         </div>
                         <div class="card-info">
                             <img src="static/img/date.svg" alt="">
                             <p>дд.мм.гггг</p>
                         </div>
                         <div class="card-info">
+                            <img src="static/img/locate.svg" alt="">
+                            <p>Район</p>
+                        </div>
+                        <div class="card-info">
                             <img src="static/img/user.svg" alt="">
                             <p>Пользователь</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/phone.svg" alt="">
+                            <p>8 (999) 999-99-99</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/email-icon.svg" alt="">
+                            <p>Электронная почта</p>
                         </div>
                         <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
                     </div>
                 </div>
-                <div class="ad-button">
-                    <button class="button-input" id="edit-button">РЕДАКТИРОВАТЬ</button>
-                    <button class="button-input" id="delete-button">УДАЛИТЬ</button>
-                </div>
+                <select style="margin: 10px; padding: 5px;">
+                    <option>На модерации</option>
+                    <option>Активно</option>
+                    <option>Найдено</option>
+                    <option>В архиве</option>
+                </select>
             </div>
-            <div class="ad-item" id="moderate-ad">
+            <div class="ad-item">
                 <div class="ad-info">
                     <img src="static/img/pet-photo.svg" alt="">
                     <div class="card-info-block">
                         <div class="card-info">
-                            <img src="static/img/locate.svg" alt="">
-                            <p>Район</p>
+                            <img src="static/img/animal-type.svg" alt="">
+                            <p>Вид животного</p>
                         </div>
                         <div class="card-info">
-                            <img src="static/img/phone.svg" alt="">
-                            <p>8 (999) 999-99-99</p>
-                        </div>
-                        <div class="card-info">
-                            <img src="static/img/date.svg" alt="">
-                            <p>дд.мм.гггг</p>
-                        </div>
-                        <div class="card-info">
-                            <img src="static/img/user.svg" alt="">
-                            <p>Пользователь</p>
-                        </div>
-                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
-                    </div>
-                </div>
-                <div class="ad-button">
-                    <button class="button-input" id="edit-button">РЕДАКТИРОВАТЬ</button>
-                    <button class="button-input" id="delete-button">УДАЛИТЬ</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" style="padding-bottom: 30px;">
-        <p class="bold-text">НАЙДЕНО</p>
-        <div class="ads-block">
-            <div class="ad-item" id="find-ad">
-                <div class="ad-info">
-                    <img src="static/img/pet-photo.svg" alt="">
-                    <div class="card-info-block">
-                        <div class="card-info">
-                            <img src="static/img/locate.svg" alt="">
-                            <p>Район</p>
-                        </div>
-                        <div class="card-info">
-                            <img src="static/img/phone.svg" alt="">
-                            <p>8 (999) 999-99-99</p>
+                            <img src="static/img/label.svg" alt="">
+                            <p>Клеймо</p>
                         </div>
                         <div class="card-info">
                             <img src="static/img/date.svg" alt="">
                             <p>дд.мм.гггг</p>
                         </div>
                         <div class="card-info">
-                            <img src="static/img/user.svg" alt="">
-                            <p>Пользователь</p>
-                        </div>
-                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
-                    </div>
-                </div>
-            </div>
-            <div class="ad-item" id="find-ad">
-                <div class="ad-info">
-                    <img src="static/img/pet-photo.svg" alt="">
-                    <div class="card-info-block">
-                        <div class="card-info">
                             <img src="static/img/locate.svg" alt="">
                             <p>Район</p>
+                        </div>
+                        <div class="card-info">
+                            <img src="static/img/user.svg" alt="">
+                            <p>Пользователь</p>
                         </div>
                         <div class="card-info">
                             <img src="static/img/phone.svg" alt="">
                             <p>8 (999) 999-99-99</p>
                         </div>
                         <div class="card-info">
-                            <img src="static/img/date.svg" alt="">
-                            <p>дд.мм.гггг</p>
-                        </div>
-                        <div class="card-info">
-                            <img src="static/img/user.svg" alt="">
-                            <p>Пользователь</p>
+                            <img src="static/img/email-icon.svg" alt="">
+                            <p>Электронная почта</p>
                         </div>
                         <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <button class="button-load">ЗАГРУЗИТЬ ЕЩЕ</button>
-    </div>
-
-    <div class="container">
-        <p class="bold-text">В АРХИВЕ</p>
-        <div class="ads-block">
-            <div class="ad-item" id="archive-ad">
-                <div class="ad-info">
-                    <img src="static/img/pet-photo.svg" alt="">
-                    <div class="card-info-block">
-                        <div class="card-info">
-                            <img src="static/img/locate.svg" alt="">
-                            <p>Район</p>
-                        </div>
-                        <div class="card-info">
-                            <img src="static/img/phone.svg" alt="">
-                            <p>8 (999) 999-99-99</p>
-                        </div>
-                        <div class="card-info">
-                            <img src="static/img/date.svg" alt="">
-                            <p>дд.мм.гггг</p>
-                        </div>
-                        <div class="card-info">
-                            <img src="static/img/user.svg" alt="">
-                            <p>Пользователь</p>
-                        </div>
-                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
-                    </div>
-                </div>
-            </div>
-            <div class="ad-item" id="archive-ad">
-                <div class="ad-info">
-                    <img src="static/img/pet-photo.svg" alt="">
-                    <div class="card-info-block">
-                        <div class="card-info">
-                            <img src="static/img/locate.svg" alt="">
-                            <p>Район</p>
-                        </div>
-                        <div class="card-info">
-                            <img src="static/img/phone.svg" alt="">
-                            <p>8 (999) 999-99-99</p>
-                        </div>
-                        <div class="card-info">
-                            <img src="static/img/date.svg" alt="">
-                            <p>дд.мм.гггг</p>
-                        </div>
-                        <div class="card-info">
-                            <img src="static/img/user.svg" alt="">
-                            <p>Пользователь</p>
-                        </div>
-                        <p>Тут может быть расположена любая дополнительная информация по объявлению</p>
-                    </div>
-                </div>
+                <select style="margin: 10px; padding: 5px;">
+                    <option>На модерации</option>
+                    <option>Активно</option>
+                    <option>Найдено</option>
+                    <option>В архиве</option>
+                </select>
             </div>
         </div>
         <button class="button-load">ЗАГРУЗИТЬ ЕЩЕ</button>
@@ -334,7 +255,6 @@
         </div>
     </footer>
     <p class="copy">&copy 2024 "Новая жизнь"</p>
-
 </body>
 
 </html>
